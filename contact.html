@@ -146,8 +146,8 @@ type="text"
 id="full-name"
 name="full-name"
 placeholder="Your Full Name"
-required
->
+                                    required maxlength="100" autocomplete="name" aria-required="true"
+                                    >
                   <div class="error-message"></div>
                 </div>
                 <div class="form-group">
@@ -157,8 +157,8 @@ type="email"
 id="email"
 name="email"
 placeholder="your.email@company.com"
-required
->
+                                    required maxlength="254" autocomplete="email" aria-required="true"
+                                    >
                   <div class="error-message"></div>
                 </div>
               </div>
@@ -170,8 +170,8 @@ type="text"
 id="company"
 name="company"
 placeholder="Your Company"
-required
->
+                                    required maxlength="200" autocomplete="organization" aria-required="true"
+                                    >
                   <div class="error-message"></div>
                 </div>
                 <div class="form-group">
@@ -215,8 +215,8 @@ placeholder="+1 (555) 000-0000"
                 <label for="message">Message <span class="required">*</span></label>
                 <textarea id="message" name="message" maxlength="2000" aria-required="true"
 placeholder="Tell us about your security testing needs..."
-required
-></textarea>
+                                    required maxlength="2000" aria-required="true"
+                                    ></textarea>
                 <div class="error-message"></div>
               </div>
               <button type="submit" class="btn btn-primary btn-submit btn-glow">Send Message</button>
