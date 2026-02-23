@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — DragonShield Security</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin
+>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Starry Background -->
+  <div class="stars-bg" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav
+class="navbar"
+role="navigation"
+aria-label="Main navigation"
+>
+    <div class="container">
+      <a
+href="index.html"
+class="nav-brand"
+aria-label="DragonShield Security Home"
+>
+        <svg
+viewBox="0 0 36 36"
+fill="none"
+xmlns="http://www.w3.org/2000/svg"
+aria-hidden="true"
+>
+          <path
+d="M18 2C15 2 10 6 8 10C6 14 6 18 8 22C10 26 14 30 18 34C22 30 26 26 28 22C30 18 30 14 28 10C26 6 21 2 18 2Z"
+fill="url(#dragon-grad-s)"
+opacity="0.9"
+/>
+          <circle
+cx="15.5"
+cy="14"
+r="1.2"
+fill="#00fff5"
+opacity="0.9"
+/>
+          <circle
+cx="20.5"
+cy="14"
+r="1.2"
+fill="#00fff5"
+opacity="0.9"
+/>
+          <path
+d="M18 18L16 22L18 21L20 22L18 18Z"
+fill="#00d4ff"
+opacity="0.6"
+/>
+          <defs>
+            <linearGradient
+id="dragon-grad-s"
+x1="8"
+y1="2"
+x2="28"
+y2="34"
+>
+              <stop offset="0%" stop-color="#00d4ff"/>
+              <stop offset="100%" stop-color="#6c63ff"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="nav-brand-text">Dragon<span>Shield</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="nav-cta">Get a Quote</a>
+      </div>
+      <button
+class="hamburger"
+aria-label="Toggle navigation menu"
+aria-expanded="false"
+>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-overlay" aria-hidden="true"></div>
+  <div
+class="mobile-menu"
+role="navigation"
+aria-label="Mobile navigation"
+>
+    <a href="index.html">Home</a>
+    <a href="services.html" class="active">Services</a>
+    <a href="case-studies.html">Case Studies</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a
+href="contact.html"
+class="nav-cta"
+style="text-align:center;margin-top:12px;"
+>Get a Quote</a>
+  </div>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Penetration Testing Services</h1>
+        <p>Comprehensive offensive security assessments designed to identify, exploit, and help remediate vulnerabilities across your entire attack surface.</p>
+      </div>
+    </section>
+
+    <!-- Service 1: Network Penetration Testing -->
+    <section class="service-detail" id="network-pentesting">
+      <div class="container fade-in">
+        <div class="service-detail-header">
+          <div class="service-icon">
+            <svg
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="2"
+stroke-linecap="round"
+stroke-linejoin="round"
+>
+<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+</svg>
+          </div>
+          <h2>Network Penetration Testing</h2>
+        </div>
+        <p class="service-description">Our network penetration testing services provide a thorough evaluation of your internal and external network infrastructure. Our certified testers simulate real-world attacks to identify exploitable vulnerabilities in your firewalls, routers, switches, servers, workstations, and network services.</p>
+        <p class="service-description">We conduct both external assessments — targeting your internet-facing perimeter — and internal assessments that simulate an attacker who has gained initial access to your corporate network. Our testers map your network topology, enumerate services, identify misconfigurations, and attempt to escalate privileges and move laterally to reach critical assets.</p>
+        <div class="service-columns">
+          <div class="service-list-section">
+            <h4>What We Test</h4>
+            <ul>
+              <li>External perimeter devices and services (firewalls, VPNs, DMZ hosts)</li>
+              <li>Internal network segmentation and access controls</li>
+              <li>Active Directory and domain infrastructure</li>
+              <li>Network services (DNS, SMTP, SNMP, SMB, RDP, SSH)</li>
+              <li>Patch management and vulnerability exposure</li>
+              <li>Privilege escalation and lateral movement paths</li>
+              <li>Data exfiltration opportunities</li>
+            </ul>
+          </div>
+          <div class="service-list-section">
+            <h4>Deliverables</h4>
+            <ul>
+              <li>Comprehensive vulnerability report with CVSS scoring</li>
+              <li>Network topology and attack path diagrams</li>
+              <li>Prioritized remediation recommendations</li>
+              <li>Executive summary for leadership stakeholders</li>
+              <li>Post-remediation verification testing (optional)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service 2: Web Application Penetration Testing -->
+    <section class="service-detail" id="web-app-testing">
+      <div class="container fade-in">
+        <div class="service-detail-header">
+          <div class="service-icon">
+            <svg
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="2"
+stroke-linecap="round"
+stroke-linejoin="round"
+>
+<circle
+cx="12"
+cy="12"
+r="10"
+/>
+<line
+x1="2"
+y1="12"
+x2="22"
+y2="12"
+/>
+<path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+</svg>
+          </div>
+          <h2>Web Application Penetration Testing</h2>
+        </div>
+        <p class="service-description">Our web application penetration testing goes far beyond automated scanning. Our experts perform manual, in-depth security assessments of your web applications following the OWASP Web Security Testing Guide (WSTG) methodology. We identify vulnerabilities that automated tools routinely miss — including complex business logic flaws, chained attack vectors, and context-specific security weaknesses.</p>
+        <p class="service-description">Whether you are testing a customer-facing portal, an internal business application, a RESTful API, or a single-page application, our team has the expertise to uncover the risks that matter most.</p>
+        <div class="service-columns">
+          <div class="service-list-section">
+            <h4>What We Test</h4>
+            <ul>
+              <li>OWASP Top 10 vulnerabilities (injection, broken authentication, XSS, CSRF, etc.)</li>
+              <li>Authentication and session management mechanisms</li>
+              <li>Authorization and access control enforcement</li>
+              <li>Input validation and output encoding</li>
+              <li>Business logic vulnerabilities</li>
+              <li>API security (REST, GraphQL, SOAP)</li>
+              <li>File upload and data handling</li>
+              <li>Cryptographic implementation</li>
+              <li>Server-side request forgery (SSRF)</li>
+              <li>Error handling and information disclosure</li>
+            </ul>
+          </div>
+          <div class="service-list-section">
+            <h4>Deliverables</h4>
+            <ul>
+              <li>Detailed findings report aligned with OWASP categories</li>
+              <li>Proof-of-concept demonstrations for each vulnerability</li>
+              <li>Risk-rated findings with business impact context</li>
+              <li>Remediation guidance with code-level recommendations</li>
+              <li>Retest to validate fixes (included in engagement)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service 3: Mobile Application Penetration Testing -->
+    <section class="service-detail" id="mobile-app-testing">
+      <div class="container fade-in">
+        <div class="service-detail-header">
+          <div class="service-icon">
+            <svg
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="2"
+stroke-linecap="round"
+stroke-linejoin="round"
+>
+<rect
+x="5"
+y="2"
+width="14"
+height="20"
+rx="2"
+ry="2"
+/>
+<line
+x1="12"
+y1="18"
+x2="12.01"
+y2="18"
+/>
+</svg>
+          </div>
+          <h2>Mobile Application Penetration Testing</h2>
+        </div>
+        <p class="service-description">Mobile applications present unique security challenges that require specialized testing expertise. Our mobile application penetration testing covers both iOS and Android platforms, examining the application binary, its communication with backend services, local data storage, and integration with device features.</p>
+        <p class="service-description">We assess your mobile application against the OWASP Mobile Application Security Verification Standard (MASVS) and the OWASP Mobile Security Testing Guide (MSTG), ensuring comprehensive coverage of mobile-specific attack vectors.</p>
+        <div class="service-columns">
+          <div class="service-list-section">
+            <h4>What We Test</h4>
+            <ul>
+              <li>Insecure data storage on the device</li>
+              <li>Transport layer security and certificate pinning</li>
+              <li>Authentication and authorization mechanisms</li>
+              <li>Client-side injection vulnerabilities</li>
+              <li>Reverse engineering and code tampering resilience</li>
+              <li>Binary protections and anti-debugging measures</li>
+              <li>Backend API security</li>
+              <li>Inter-process communication (IPC) vulnerabilities</li>
+              <li>Cryptographic implementation</li>
+              <li>Privacy and data leakage concerns</li>
+            </ul>
+          </div>
+          <div class="service-list-section">
+            <h4>Deliverables</h4>
+            <ul>
+              <li>Platform-specific vulnerability report (iOS and/or Android)</li>
+              <li>Risk assessment aligned with OWASP MASVS</li>
+              <li>Proof-of-concept exploits with screenshots and recordings</li>
+              <li>Remediation recommendations for development teams</li>
+              <li>Guidance on secure mobile development practices</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service 4: Social Engineering Assessments -->
+    <section class="service-detail" id="social-engineering">
+      <div class="container fade-in">
+        <div class="service-detail-header">
+          <div class="service-icon">
+            <svg
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="2"
+stroke-linecap="round"
+stroke-linejoin="round"
+>
+<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+<circle
+cx="9"
+cy="7"
+r="4"
+/>
+<path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+<path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+</svg>
+          </div>
+          <h2>Social Engineering Assessments</h2>
+        </div>
+        <p class="service-description">Technology alone cannot protect your organization if your people are vulnerable. Our social engineering assessments evaluate your organization's human security layer by simulating the tactics, techniques, and procedures used by real-world attackers to manipulate employees into compromising security.</p>
+        <p class="service-description">We design realistic, customized social engineering campaigns that test your staff's ability to recognize and respond to threats — from sophisticated phishing emails to pretexting phone calls and physical intrusion attempts. Every campaign is conducted ethically and with full management authorization.</p>
+        <div class="service-columns">
+          <div class="service-list-section">
+            <h4>What We Test</h4>
+            <ul>
+              <li>Email phishing campaigns (spear phishing, credential harvesting, payload delivery)</li>
+              <li>Vishing (voice phishing) and pretexting calls</li>
+              <li>SMS phishing (smishing) campaigns</li>
+              <li>Physical security and tailgating assessments</li>
+              <li>USB drop and baiting scenarios</li>
+              <li>Impersonation and pretext development</li>
+              <li>Employee security awareness and reporting behavior</li>
+            </ul>
+          </div>
+          <div class="service-list-section">
+            <h4>Deliverables</h4>
+            <ul>
+              <li>Campaign results with detailed metrics (click rates, credential submissions, reporting rates)</li>
+              <li>Individual and departmental susceptibility analysis</li>
+              <li>Anonymized findings to protect employee privacy</li>
+              <li>Recommendations for security awareness training improvements</li>
+              <li>Benchmark data for measuring progress over time</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service 5: Red Team Operations -->
+    <section class="service-detail" id="red-teaming">
+      <div class="container fade-in">
+        <div class="service-detail-header">
+          <div class="service-icon">
+            <svg
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="2"
+stroke-linecap="round"
+stroke-linejoin="round"
+>
+<circle
+cx="12"
+cy="12"
+r="10"
+/>
+<circle
+cx="12"
+cy="12"
+r="6"
+/>
+<circle
+cx="12"
+cy="12"
+r="2"
+/>
+</svg>
+          </div>
+          <h2>Red Team Operations</h2>
+        </div>
+        <p class="service-description">Red team engagements are our most comprehensive offensive security offering. Unlike traditional penetration testing, which focuses on identifying vulnerabilities within a defined scope, red team operations simulate a full-scale, realistic attack against your organization with minimal constraints.</p>
+        <p class="service-description">Our red team operators employ the same tactics, techniques, and procedures (TTPs) used by advanced persistent threats (APTs) and sophisticated adversaries. We target your people, processes, and technology simultaneously — combining technical exploitation, social engineering, and physical security testing to achieve defined objectives such as accessing sensitive data, compromising critical systems, or demonstrating business impact.</p>
+        <p class="service-description">Red team engagements are ideal for organizations with mature security programs that want to test their detection and response capabilities under realistic conditions.</p>
+        <div class="service-columns">
+          <div class="service-list-section">
+            <h4>What We Test</h4>
+            <ul>
+              <li>Perimeter defenses and initial access vectors</li>
+              <li>Social engineering and human exploitation</li>
+              <li>Endpoint detection and response (EDR) evasion</li>
+              <li>Lateral movement and privilege escalation</li>
+              <li>Data access and exfiltration capabilities</li>
+              <li>Security Operations Center (SOC) detection and response effectiveness</li>
+              <li>Incident response procedures and escalation processes</li>
+              <li>Physical security controls (where in scope)</li>
+            </ul>
+          </div>
+          <div class="service-list-section">
+            <h4>Deliverables</h4>
+            <ul>
+              <li>Full attack narrative documenting the engagement timeline</li>
+              <li>Detailed attack path diagrams and kill chain analysis</li>
+              <li>Assessment of detection and response capabilities</li>
+              <li>Purple team recommendations for improving defensive controls</li>
+              <li>Strategic roadmap for security program maturity</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service 6: Cloud Security Testing -->
+    <section class="service-detail" id="cloud-security">
+      <div class="container fade-in">
+        <div class="service-detail-header">
+          <div class="service-icon">
+            <svg
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="2"
+stroke-linecap="round"
+stroke-linejoin="round"
+>
+<path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+<rect
+x="10"
+y="14"
+width="4"
+height="5"
+rx="1"
+/>
+<path d="M12 14v-2"/>
+</svg>
+          </div>
+          <h2>Cloud Security Testing</h2>
+        </div>
+        <p class="service-description">As organizations migrate critical workloads to the cloud, new attack surfaces emerge that require specialized security expertise. Our cloud security testing services assess your Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP) environments for misconfigurations, excessive permissions, insecure architectures, and exploitable vulnerabilities.</p>
+        <p class="service-description">We evaluate your cloud infrastructure against industry benchmarks including CIS Benchmarks and cloud provider security best practices, while also performing hands-on exploitation to demonstrate real-world risk.</p>
+        <div class="service-columns">
+          <div class="service-list-section">
+            <h4>What We Test</h4>
+            <ul>
+              <li>Identity and Access Management (IAM) policies and roles</li>
+              <li>Storage bucket and blob permissions (S3, Azure Blob, GCS)</li>
+              <li>Network security groups and firewall rules</li>
+              <li>Serverless function security (Lambda, Azure Functions, Cloud Functions)</li>
+              <li>Container and Kubernetes security (EKS, AKS, GKE)</li>
+              <li>Secrets management and key rotation</li>
+              <li>Logging, monitoring, and alerting configurations</li>
+              <li>Cross-account and cross-tenant access risks</li>
+              <li>Privilege escalation paths within cloud environments</li>
+            </ul>
+          </div>
+          <div class="service-list-section">
+            <h4>Deliverables</h4>
+            <ul>
+              <li>Cloud-specific vulnerability and misconfiguration report</li>
+              <li>Risk-rated findings with exploitation evidence</li>
+              <li>Architecture review and security recommendations</li>
+              <li>Compliance mapping (CIS, SOC 2, ISO 27001 where applicable)</li>
+              <li>Remediation guidance with cloud-native solutions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service 7: Wireless Network Penetration Testing -->
+    <section class="service-detail" id="wireless-testing">
+      <div class="container fade-in">
+        <div class="service-detail-header">
+          <div class="service-icon">
+            <svg
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="2"
+stroke-linecap="round"
+stroke-linejoin="round"
+>
+<path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+<path d="M1.42 9a16 16 0 0 1 21.16 0"/>
+<path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+<line
+x1="12"
+y1="20"
+x2="12.01"
+y2="20"
+/>
+</svg>
+          </div>
+          <h2>Wireless Network Penetration Testing</h2>
+        </div>
+        <p class="service-description">Wireless networks can provide attackers with a stealthy entry point into your corporate environment. Our wireless penetration testing services evaluate the security of your Wi-Fi infrastructure, identifying vulnerabilities in encryption, authentication, network segmentation, and access controls.</p>
+        <p class="service-description">We assess your wireless environment for rogue access points, weak encryption protocols, misconfigured networks, and opportunities for unauthorized access. Our testers operate on-site to evaluate signal leakage, test for evil twin attacks, and attempt to pivot from the wireless network into your internal corporate infrastructure.</p>
+        <div class="service-columns">
+          <div class="service-list-section">
+            <h4>What We Test</h4>
+            <ul>
+              <li>Wireless encryption standards (WPA2/WPA3 Enterprise and Personal)</li>
+              <li>802.1X authentication and RADIUS configurations</li>
+              <li>Rogue access point detection</li>
+              <li>Evil twin and man-in-the-middle attack scenarios</li>
+              <li>Wireless network segmentation (guest vs. corporate)</li>
+              <li>Signal leakage beyond physical boundaries</li>
+              <li>Bluetooth and other RF protocol security (where applicable)</li>
+              <li>Client isolation and network access controls</li>
+              <li>Captive portal security</li>
+            </ul>
+          </div>
+          <div class="service-list-section">
+            <h4>Deliverables</h4>
+            <ul>
+              <li>Wireless security assessment report</li>
+              <li>Heat map of signal coverage and leakage areas</li>
+              <li>Identified rogue devices and unauthorized access points</li>
+              <li>Risk-rated findings with exploitation evidence</li>
+              <li>Remediation recommendations for wireless infrastructure hardening</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section class="section-padding" style="background: var(--deep-blue);">
+      <div class="container">
+        <div class="text-center fade-in">
+          <h2 class="section-heading">Our Methodology</h2>
+          <p class="section-subtext">Every DragonShield engagement is grounded in industry-recognized methodologies and frameworks. We tailor our approach to each client's unique environment while maintaining the rigor and consistency that these standards demand.</p>
+        </div>
+        <div class="grid-4 fade-in">
+          <div class="methodology-card">
+            <h3>PTES</h3>
+            <p>Our primary engagement framework. PTES provides a structured seven-phase approach: pre-engagement interactions, intelligence gathering, threat modeling, vulnerability analysis, exploitation, post-exploitation, and reporting. This ensures comprehensive coverage and consistent quality across all engagements.</p>
+          </div>
+          <div class="methodology-card">
+            <h3>OWASP Testing Guide</h3>
+            <p>The gold standard for web application security testing. We follow the OWASP Web Security Testing Guide (WSTG) for all web application assessments, covering 12 testing categories including information gathering, authentication testing, authorization testing, input validation, business logic testing, and API security.</p>
+          </div>
+          <div class="methodology-card">
+            <h3>NIST SP 800-115</h3>
+            <p>The National Institute of Standards and Technology's Technical Guide to Information Security Testing and Assessment. We incorporate NIST guidance for planning, executing, and reporting on security assessments, ensuring our work aligns with federal standards and best practices.</p>
+          </div>
+          <div class="methodology-card">
+            <h3>OSSTMM</h3>
+            <p>A comprehensive methodology for testing operational security across multiple domains. OSSTMM guides our approach to physical security, wireless security, human security, and telecommunications testing — ensuring we assess security holistically, not just technically.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Engagement Process Section -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="text-center fade-in">
+          <h2 class="section-heading">How We Work</h2>
+          <p class="section-subtext">Our proven six-step engagement process ensures clarity, thoroughness, and actionable outcomes from start to finish.</p>
+        </div>
+        <div class="process-timeline fade-in">
+          <div class="process-step">
+            <div class="process-step-number">1</div>
+            <h4>Scoping &amp; Planning</h4>
+            <p>We begin with a detailed scoping call to understand your environment, objectives, compliance requirements, and concerns. Together, we define the engagement scope, rules of engagement, testing windows, and communication protocols. A formal Statement of Work and authorization documents are prepared and signed.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step-number">2</div>
+            <h4>Reconnaissance &amp; Intelligence Gathering</h4>
+            <p>Our team conducts thorough reconnaissance of your target environment using both passive and active techniques. We gather open-source intelligence (OSINT), map your attack surface, identify technologies in use, and build a comprehensive picture of potential entry points.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step-number">3</div>
+            <h4>Vulnerability Discovery &amp; Analysis</h4>
+            <p>Using a combination of automated scanning tools and manual testing techniques, we systematically identify vulnerabilities across the engagement scope. Each finding is validated manually to eliminate false positives and assess true exploitability.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step-number">4</div>
+            <h4>Exploitation &amp; Validation</h4>
+            <p>With your authorization, we attempt to exploit identified vulnerabilities to demonstrate real-world impact. We document each successful exploitation with evidence, assess the potential business impact, and determine how far an attacker could progress from each entry point.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step-number">5</div>
+            <h4>Reporting &amp; Remediation Guidance</h4>
+            <p>We compile our findings into a comprehensive report that includes an executive summary, detailed technical findings with CVSS scores, proof-of-concept evidence, and prioritized remediation recommendations. We present findings to both technical and executive stakeholders.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step-number">6</div>
+            <h4>Remediation Support &amp; Retesting</h4>
+            <p>Our engagement doesn't end with the report. We offer remediation consultation to help your team address findings effectively, and we conduct retesting to verify that vulnerabilities have been successfully resolved.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding cta-section">
+      <div class="container fade-in">
+        <h2>Protect Your Organization Today</h2>
+        <p>Every day without testing is another day your vulnerabilities remain undiscovered. Contact our team to discuss which services are right for your organization.</p>
+        <a href="contact.html" class="btn btn-primary btn-glow">Schedule a Consultation</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-brand">
+            <svg
+viewBox="0 0 36 36"
+fill="none"
+xmlns="http://www.w3.org/2000/svg"
+aria-hidden="true"
+>
+              <path
+d="M18 2C15 2 10 6 8 10C6 14 6 18 8 22C10 26 14 30 18 34C22 30 26 26 28 22C30 18 30 14 28 10C26 6 21 2 18 2Z"
+fill="url(#footer-dragon-grad-s)"
+opacity="0.9"
+/>
+              <circle
+cx="15.5"
+cy="14"
+r="1.2"
+fill="#00fff5"
+opacity="0.9"
+/>
+              <circle
+cx="20.5"
+cy="14"
+r="1.2"
+fill="#00fff5"
+opacity="0.9"
+/>
+              <defs>
+                <linearGradient
+id="footer-dragon-grad-s"
+x1="8"
+y1="2"
+x2="28"
+y2="34"
+>
+                  <stop offset="0%" stop-color="#00d4ff"/>
+                  <stop offset="100%" stop-color="#6c63ff"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <span class="nav-brand-text">Dragon<span>Shield</span></span>
+          </a>
+          <p>Guarding Your Digital Realm. Premier cybersecurity and penetration testing services for organizations worldwide.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>
+            <a href="mailto:contact@dragonshieldsecurity.com">contact@dragonshieldsecurity.com</a><br>
+            +1 (512) 555-0142<br>
+            Austin, TX 78701
+          </p>
+          <div class="footer-social">
+            <a
+href="#"
+aria-label="LinkedIn"
+target="_blank"
+rel="noopener noreferrer"
+>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+</svg>
+            </a>
+            <a
+href="#"
+aria-label="X (Twitter)"
+target="_blank"
+rel="noopener noreferrer"
+>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+</svg>
+            </a>
+            <a
+href="#"
+aria-label="GitHub"
+target="_blank"
+rel="noopener noreferrer"
+>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+<path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+</svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 DragonShield Security. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

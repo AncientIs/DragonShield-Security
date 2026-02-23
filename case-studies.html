@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Studies — DragonShield Security</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin
+>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Starry Background -->
+  <div class="stars-bg" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav
+class="navbar"
+role="navigation"
+aria-label="Main navigation"
+>
+    <div class="container">
+      <a
+href="index.html"
+class="nav-brand"
+aria-label="DragonShield Security Home"
+>
+        <svg
+viewBox="0 0 36 36"
+fill="none"
+xmlns="http://www.w3.org/2000/svg"
+aria-hidden="true"
+>
+          <path
+d="M18 2C15 2 10 6 8 10C6 14 6 18 8 22C10 26 14 30 18 34C22 30 26 26 28 22C30 18 30 14 28 10C26 6 21 2 18 2Z"
+fill="url(#dragon-grad-cs)"
+opacity="0.9"
+/>
+          <circle
+cx="15.5"
+cy="14"
+r="1.2"
+fill="#00fff5"
+opacity="0.9"
+/>
+          <circle
+cx="20.5"
+cy="14"
+r="1.2"
+fill="#00fff5"
+opacity="0.9"
+/>
+          <path
+d="M18 18L16 22L18 21L20 22L18 18Z"
+fill="#00d4ff"
+opacity="0.6"
+/>
+          <defs>
+            <linearGradient
+id="dragon-grad-cs"
+x1="8"
+y1="2"
+x2="28"
+y2="34"
+>
+              <stop offset="0%" stop-color="#00d4ff"/>
+              <stop offset="100%" stop-color="#6c63ff"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="nav-brand-text">Dragon<span>Shield</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="case-studies.html" class="active">Case Studies</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="nav-cta">Get a Quote</a>
+      </div>
+      <button
+class="hamburger"
+aria-label="Toggle navigation menu"
+aria-expanded="false"
+>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-overlay" aria-hidden="true"></div>
+  <div
+class="mobile-menu"
+role="navigation"
+aria-label="Mobile navigation"
+>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="case-studies.html" class="active">Case Studies</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a
+href="contact.html"
+class="nav-cta"
+style="text-align:center;margin-top:12px;"
+>Get a Quote</a>
+  </div>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Case Studies</h1>
+        <p>Real-world results from our penetration testing engagements. See how DragonShield Security helps organizations identify and remediate critical vulnerabilities before they can be exploited.</p>
+      </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="section-padding">
+      <div class="container">
+
+        <!-- Case Study 1 -->
+        <article class="case-study fade-in">
+          <div class="case-study-tags">
+            <span class="case-study-tag">Financial Services</span>
+            <span class="case-study-tag">Web Application &amp; Network Penetration Testing</span>
+            <span class="case-study-tag">4 Weeks</span>
+          </div>
+          <h3>Financial Services — Banking Platform Security Assessment</h3>
+
+          <div class="case-study-section">
+            <h4>Client Background</h4>
+            <p>A mid-size regional bank with over $8 billion in assets was preparing to launch a new digital banking platform. With regulatory requirements from the FFIEC and OCC mandating regular security assessments, the bank needed a comprehensive penetration test of the platform before going live.</p>
+          </div>
+
+          <div class="case-study-section">
+            <h4>Challenge</h4>
+            <p>The bank's new digital banking platform integrated with multiple legacy core banking systems, third-party payment processors, and a mobile API layer. The complex architecture created a broad attack surface, and the bank's internal security team lacked the offensive security expertise to conduct a thorough assessment. Previous automated vulnerability scans had returned hundreds of findings with no clear prioritization, leaving the development team overwhelmed and uncertain about which issues posed genuine risk.</p>
+          </div>
+
+          <div class="case-study-section">
+            <h4>Approach &amp; Methodology</h4>
+            <p>DragonShield deployed a team of three senior penetration testers for a four-week engagement. We followed the OWASP Web Security Testing Guide for the web application assessment and PTES for the network infrastructure testing.</p>
+            <p><strong>Phase 1 — Reconnaissance:</strong> We mapped the entire application architecture, identified all API endpoints, and cataloged third-party integrations.</p>
+            <p><strong>Phase 2 — Web Application Testing:</strong> We conducted manual testing of all authentication flows, authorization controls, transaction processing logic, and data handling mechanisms. Special attention was given to business logic vulnerabilities in fund transfer and account management functions.</p>
+            <p><strong>Phase 3 — Network Assessment:</strong> We evaluated the network segmentation between the digital banking platform, core banking systems, and the corporate network. We tested for lateral movement paths and privilege escalation opportunities.</p>
+            <p><strong>Phase 4 — API Security Testing:</strong> We assessed the mobile API layer for authentication bypass, insecure direct object references, and data exposure vulnerabilities.</p>
+          </div>
+
+          <div class="case-study-section">
+            <h4>Key Findings</h4>
+            <ul>
+              <li><strong>Critical:</strong> An insecure direct object reference (IDOR) vulnerability in the account API allowed authenticated users to access other customers' account details and transaction history by manipulating account identifier parameters.</li>
+              <li><strong>Critical:</strong> Insufficient input validation in the internal fund transfer function allowed negative value transfers, potentially enabling unauthorized balance manipulation.</li>
+              <li><strong>High:</strong> Session tokens were not invalidated server-side upon logout, allowing session replay attacks within a 30-minute window.</li>
+              <li><strong>High:</strong> The administrative interface was accessible from the public internet with default credentials on a non-standard port.</li>
+              <li><strong>Medium:</strong> Verbose error messages in the API disclosed internal system architecture details, database table names, and stack traces.</li>
+              <li>14 additional medium and low severity findings related to security headers, TLS configuration, and cookie attributes.</li>
+            </ul>
+          </div>
+
+          <div class="case-study-section">
+            <h4>Results &amp; Impact</h4>
+            <p>All critical and high-severity findings were remediated by the development team within three weeks of report delivery, with DragonShield providing remediation consultation throughout the process. Our retesting confirmed successful remediation of all findings. The digital banking platform launched on schedule, passing the subsequent regulatory security review without any findings. The bank has since engaged DragonShield for quarterly security assessments of the platform.</p>
+          </div>
+
+          <div class="case-study-metric">
+            <strong>Key Metric:</strong> 19 vulnerabilities identified, including 2 critical findings that automated scanners had missed entirely.
+          </div>
+        </article>
+
+        <!-- Case Study 2 -->
+        <article class="case-study fade-in">
+          <div class="case-study-tags">
+            <span class="case-study-tag">Healthcare</span>
+            <span class="case-study-tag">Red Team Operations</span>
+            <span class="case-study-tag">6 Weeks</span>
+          </div>
+          <h3>Healthcare — Hospital Network Red Team Engagement</h3>
+
+          <div class="case-study-section">
+            <h4>Client Background</h4>
+            <p>A national healthcare provider operating 12 hospitals and over 200 outpatient clinics engaged DragonShield for a red team assessment. The organization had invested significantly in security tools and a 24/7 Security Operations Center (SOC) over the previous two years and wanted to validate the effectiveness of these investments against realistic attack scenarios.</p>
+          </div>
+
+          <div class="case-study-section">
+            <h4>Challenge</h4>
+            <p>The healthcare provider needed to understand whether a sophisticated attacker could breach their defenses and access protected health information (PHI) governed by HIPAA. Previous penetration tests had focused on specific systems in isolation, but leadership wanted a holistic assessment that tested their people, processes, and technology together under realistic conditions. The SOC team had never been tested against a live, skilled adversary.</p>
+          </div>
+
+          <div class="case-study-section">
+            <h4>Approach &amp; Methodology</h4>
+            <p>DragonShield's red team conducted a six-week engagement with the objective of gaining access to systems containing PHI without being detected by the SOC. Only the CISO and General Counsel were aware of the engagement.</p>
+            <p><strong>Week 1–2 — Reconnaissance &amp; Social Engineering:</strong> We conducted extensive OSINT gathering, identifying key personnel, technology stacks, and organizational structure. We crafted targeted spear-phishing emails impersonating a medical equipment vendor, achieving credential harvesting from three employees.</p>
+            <p><strong>Week 3–4 — Initial Access &amp; Lateral Movement:</strong> Using harvested credentials, we accessed the corporate VPN and established a foothold on the internal network. We employed custom tooling to evade the organization's EDR solution and moved laterally through the network, escalating privileges via a misconfigured service account with domain admin rights.</p>
+            <p><strong>Week 5 — Objective Achievement:</strong> We accessed a database server containing patient records in a segmented network by exploiting a trust relationship between the corporate domain and the clinical systems domain. We demonstrated access to PHI without exfiltrating any actual data.</p>
+            <p><strong>Week 6 — Reporting &amp; Purple Team Debrief:</strong> We compiled our findings and conducted a collaborative purple team session with the SOC, walking through the entire attack timeline and identifying detection opportunities that were missed.</p>
+          </div>
+
+          <div class="case-study-section">
+            <h4>Key Findings</h4>
+            <ul>
+              <li>The SOC did not detect the initial compromise or lateral movement for 23 days, despite multiple indicators of compromise being generated.</li>
+              <li>Spear-phishing emails bypassed the email security gateway due to the use of a newly registered lookalike domain.</li>
+              <li>A service account with domain admin privileges had not had its password rotated in over 18 months.</li>
+              <li>Network segmentation between corporate and clinical environments was undermined by a legacy trust relationship that had not been reviewed.</li>
+              <li>EDR alerts for the custom tooling were generated but classified as low priority and not investigated within the engagement window.</li>
+            </ul>
+          </div>
+
+          <div class="case-study-section">
+            <h4>Results &amp; Impact</h4>
+            <p>The engagement led to a comprehensive overhaul of the organization's detection and response procedures. The SOC implemented new alert triage workflows, the IT team remediated the service account and network segmentation issues, and the organization launched an enhanced security awareness training program focused on spear-phishing recognition. A follow-up red team engagement six months later showed a 70% improvement in detection time, with the SOC identifying the initial compromise within 48 hours.</p>
+          </div>
+
+          <div class="case-study-metric">
+            <strong>Key Metric:</strong> Mean time to detect reduced from 23 days to under 48 hours after implementing DragonShield's recommendations.
+          </div>
+        </article>
+
+        <!-- Case Study 3 -->
+        <article class="case-study fade-in">
+          <div class="case-study-tags">
+            <span class="case-study-tag">Technology / SaaS</span>
+            <span class="case-study-tag">Cloud Security Testing &amp; Web Application Testing</span>
+            <span class="case-study-tag">3 Weeks</span>
+          </div>
+          <h3>Technology — SaaS Platform Cloud Security Assessment</h3>
+
+          <div class="case-study-section">
+            <h4>Client Background</h4>
+            <p>A fast-growing B2B SaaS company providing project management software to enterprise clients needed a comprehensive security assessment of their AWS-hosted platform. Several prospective enterprise customers had requested evidence of third-party security testing as part of their vendor risk assessment process, and the company was pursuing SOC 2 Type II certification.</p>
+          </div>
+
+          <div class="case-study-section">
+            <h4>Challenge</h4>
+            <p>The SaaS platform had been built rapidly by a development team focused on feature delivery, with security considerations often deferred. The AWS environment had grown organically over three years without a formal cloud security architecture review. The company had no dedicated security team and relied on default AWS configurations for most services. They needed to identify and remediate critical security issues before their SOC 2 audit.</p>
+          </div>
+
+          <div class="case-study-section">
+            <h4>Approach &amp; Methodology</h4>
+            <p>DragonShield conducted a combined cloud security assessment and web application penetration test over three weeks.</p>
+            <p><strong>Cloud Security Assessment:</strong> We reviewed the AWS environment against CIS AWS Foundations Benchmark, evaluating IAM policies, S3 bucket configurations, VPC architecture, security group rules, CloudTrail logging, and secrets management practices.</p>
+            <p><strong>Web Application Testing:</strong> We performed a comprehensive assessment of the SaaS platform following the OWASP Testing Guide, focusing on multi-tenant isolation, authentication, authorization, and data handling.</p>
+            <p><strong>Infrastructure as Code Review:</strong> We reviewed the company's Terraform configurations to identify security issues that would be reintroduced with each deployment.</p>
+          </div>
+
+          <div class="case-study-section">
+            <h4>Key Findings</h4>
+            <ul>
+              <li><strong>Critical:</strong> Three S3 buckets containing customer data backups were publicly accessible due to misconfigured bucket policies.</li>
+              <li><strong>Critical:</strong> A server-side request forgery (SSRF) vulnerability in the file import feature allowed access to the AWS instance metadata service, enabling retrieval of IAM role credentials.</li>
+              <li><strong>High:</strong> Tenant isolation in the application relied solely on application-layer controls; a parameter manipulation vulnerability allowed cross-tenant data access.</li>
+              <li><strong>High:</strong> IAM policies followed a pattern of overly permissive wildcard permissions (e.g., s3:*), violating the principle of least privilege.</li>
+              <li><strong>Medium:</strong> CloudTrail logging was not enabled in three AWS regions, creating blind spots for security monitoring.</li>
+              <li>22 additional findings across cloud configuration, application security, and infrastructure-as-code categories.</li>
+            </ul>
+          </div>
+
+          <div class="case-study-section">
+            <h4>Results &amp; Impact</h4>
+            <p>The company remediated all critical and high-severity findings within four weeks, with DragonShield providing hands-on remediation guidance for the cloud configuration issues. The publicly accessible S3 buckets were secured immediately upon notification (within hours of discovery). The company successfully passed their SOC 2 Type II audit three months later and has since used the DragonShield assessment report to satisfy vendor security questionnaires from enterprise prospects, directly contributing to the closure of two major enterprise contracts.</p>
+          </div>
+
+          <div class="case-study-metric">
+            <strong>Key Metric:</strong> 28 security findings identified; 3 publicly exposed S3 buckets containing customer data secured within hours of discovery.
+          </div>
+        </article>
+
+        <!-- Case Study 4 -->
+        <article class="case-study fade-in">
+          <div class="case-study-tags">
+            <span class="case-study-tag">Manufacturing</span>
+            <span class="case-study-tag">Network Penetration Testing &amp; Social Engineering</span>
+            <span class="case-study-tag">3 Weeks</span>
+          </div>
+          <h3>Manufacturing — Industrial Control System &amp; Corporate Network Assessment</h3>
+
+          <div class="case-study-section">
+            <h4>Client Background</h4>
+            <p>A multinational manufacturing company with operations across North America and Europe engaged DragonShield to assess the security of their corporate network and evaluate the risk of an attacker pivoting from the corporate environment to their operational technology (OT) network controlling industrial processes.</p>
+          </div>
+
+          <div class="case-study-section">
+            <h4>Challenge</h4>
+            <p>The company had experienced a ransomware incident 18 months prior that disrupted production at two facilities for five days, resulting in estimated losses of $3.2 million. Since then, they had invested in network segmentation, endpoint protection, and employee security training. They needed an independent assessment to validate these improvements and identify any remaining gaps — particularly at the IT/OT boundary.</p>
+          </div>
+
+          <div class="case-study-section">
+            <h4>Approach &amp; Methodology</h4>
+            <p>DragonShield conducted a three-week engagement combining network penetration testing with a targeted social engineering campaign.</p>
+            <p><strong>Week 1 — Social Engineering Campaign:</strong> We launched a phishing campaign targeting 500 employees across corporate and plant operations roles, using pretexts related to safety compliance and benefits enrollment.</p>
+            <p><strong>Week 2 — External &amp; Internal Network Testing:</strong> We assessed the external perimeter for vulnerabilities and then conducted internal network testing from both the corporate headquarters and a manufacturing plant location, focusing on network segmentation between IT and OT environments.</p>
+            <p><strong>Week 3 — IT/OT Boundary Assessment:</strong> Working within carefully defined safety parameters, we evaluated the controls separating the corporate network from the OT environment, testing for paths that could allow an attacker to reach industrial control systems.</p>
+          </div>
+
+          <div class="case-study-section">
+            <h4>Key Findings</h4>
+            <ul>
+              <li><strong>High:</strong> 12% of targeted employees clicked the phishing link, and 6% submitted corporate credentials — a significant improvement from the industry average of 15-20%, but still representing a viable initial access vector.</li>
+              <li><strong>High:</strong> A legacy VPN concentrator at one plant location was running firmware with a known remote code execution vulnerability (patched version available for 14 months).</li>
+              <li><strong>High:</strong> A shared service account used by an engineering application had access to both the corporate Active Directory and a jump server in the OT DMZ, creating a potential pivot path.</li>
+              <li><strong>Medium:</strong> Network segmentation between IT and OT was properly implemented at the firewall level, but DNS resolution between zones was permitted, enabling potential data exfiltration via DNS tunneling.</li>
+              <li><strong>Medium:</strong> Several engineering workstations in the OT environment were running unsupported operating systems with no compensating controls.</li>
+            </ul>
+          </div>
+
+          <div class="case-study-section">
+            <h4>Results &amp; Impact</h4>
+            <p>The company addressed all high-severity findings within six weeks. The legacy VPN was patched immediately, the shared service account was replaced with separate accounts for each environment, and DNS resolution between IT and OT zones was restricted to specific, monitored servers. The phishing results were used to design targeted security awareness training for the departments with the highest click rates. The company now conducts annual penetration testing with DragonShield as part of their ongoing security program.</p>
+          </div>
+
+          <div class="case-study-metric">
+            <strong>Key Metric:</strong> Potential IT-to-OT pivot path identified and eliminated; phishing susceptibility measured at 6% (below industry average).
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="section-padding" style="background: var(--deep-blue);">
+      <div class="container">
+        <div class="text-center fade-in">
+          <h2 class="section-heading">DragonShield by the Numbers</h2>
+        </div>
+        <div class="stats-grid fade-in">
+          <div class="stat-card">
+            <span class="stat-value"><span
+class="counter"
+data-target="500"
+data-suffix="+"
+>0</span></span>
+            <span class="stat-label">Penetration Testing Engagements Completed</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value"><span
+class="counter"
+data-target="2800"
+data-suffix="+"
+>0</span></span>
+            <span class="stat-label">Critical Vulnerabilities Identified</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value"><span
+class="counter"
+data-target="150"
+data-suffix="+"
+>0</span></span>
+            <span class="stat-label">Clients Across 20+ Industries</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value"><span
+class="counter"
+data-target="99"
+data-suffix="%"
+>0</span></span>
+            <span class="stat-label">Client Retention Rate</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">48hr</span>
+            <span class="stat-label">Average Time from Finding to Client Notification for Critical Issues</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value"><span
+class="counter"
+data-target="12"
+data-suffix="+"
+>0</span></span>
+            <span class="stat-label">Years of Offensive Security Experience</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding cta-section">
+      <div class="container fade-in">
+        <h2>Ready to Fortify Your Defenses?</h2>
+        <p>Take the first step toward a stronger security posture. Our team is ready to design a penetration testing engagement tailored to your organization's unique needs.</p>
+        <a href="contact.html" class="btn btn-primary btn-glow">Get Started Today</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-brand">
+            <svg
+viewBox="0 0 36 36"
+fill="none"
+xmlns="http://www.w3.org/2000/svg"
+aria-hidden="true"
+>
+              <path
+d="M18 2C15 2 10 6 8 10C6 14 6 18 8 22C10 26 14 30 18 34C22 30 26 26 28 22C30 18 30 14 28 10C26 6 21 2 18 2Z"
+fill="url(#footer-dragon-grad-cs)"
+opacity="0.9"
+/>
+              <circle
+cx="15.5"
+cy="14"
+r="1.2"
+fill="#00fff5"
+opacity="0.9"
+/>
+              <circle
+cx="20.5"
+cy="14"
+r="1.2"
+fill="#00fff5"
+opacity="0.9"
+/>
+              <defs>
+                <linearGradient
+id="footer-dragon-grad-cs"
+x1="8"
+y1="2"
+x2="28"
+y2="34"
+>
+                  <stop offset="0%" stop-color="#00d4ff"/>
+                  <stop offset="100%" stop-color="#6c63ff"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <span class="nav-brand-text">Dragon<span>Shield</span></span>
+          </a>
+          <p>Guarding Your Digital Realm. Premier cybersecurity and penetration testing services for organizations worldwide.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>
+            <a href="mailto:contact@dragonshieldsecurity.com">contact@dragonshieldsecurity.com</a><br>
+            +1 (512) 555-0142<br>
+            Austin, TX 78701
+          </p>
+          <div class="footer-social">
+            <a
+href="#"
+aria-label="LinkedIn"
+target="_blank"
+rel="noopener noreferrer"
+>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+</svg>
+            </a>
+            <a
+href="#"
+aria-label="X (Twitter)"
+target="_blank"
+rel="noopener noreferrer"
+>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+</svg>
+            </a>
+            <a
+href="#"
+aria-label="GitHub"
+target="_blank"
+rel="noopener noreferrer"
+>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+<path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+</svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 DragonShield Security. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
