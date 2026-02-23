@@ -3,7 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.google.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
   <title>Contact — DragonShield Security</title>
+    <meta name="description" content="Contact DragonShield Security for cybersecurity consultations, penetration testing quotes, and security assessments.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
 rel="preconnect"
@@ -129,7 +135,9 @@ style="text-align:center;margin-top:12px;"
         <div class="contact-grid fade-in">
           <!-- Contact Form -->
           <div class="contact-form">
-            <form id="contact-form" novalidate>
+            <form id="contact-form" action="#" method="POST">
+                        <!-- CSRF Token Placeholder -->
+                        <input type="hidden" name="_csrf_token" value="CSRF_TOKEN_PLACEHOLDER">
               <div class="form-row">
                 <div class="form-group">
                   <label for="full-name">Full Name <span class="required">*</span></label>
@@ -168,10 +176,7 @@ required
                 </div>
                 <div class="form-group">
                   <label for="phone">Phone Number</label>
-                  <input
-type="tel"
-id="phone"
-name="phone"
+                  <input type="tel" id="phone" name="phone" maxlength="20" pattern="[+]?[0-9 ()-]{7,20}" autocomplete="tel"
 placeholder="+1 (555) 000-0000"
 >
                 </div>
@@ -179,10 +184,7 @@ placeholder="+1 (555) 000-0000"
               <div class="form-row">
                 <div class="form-group">
                   <label for="service-interest">Service Interest <span class="required">*</span></label>
-                  <select
-id="service-interest"
-name="service-interest"
-required
+                  <select id="service-interest" name="service-interest" required aria-required="true"
 >
                     <option value="">Select a Service...</option>
                     <option value="network-pentesting">Network Penetration Testing</option>
@@ -211,9 +213,7 @@ required
               </div>
               <div class="form-group">
                 <label for="message">Message <span class="required">*</span></label>
-                <textarea
-id="message"
-name="message"
+                <textarea id="message" name="message" maxlength="2000" aria-required="true"
 placeholder="Tell us about your security testing needs..."
 required
 ></textarea>
